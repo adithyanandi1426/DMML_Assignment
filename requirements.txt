@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+mlflow
+prefect
+matplotlib
+seaborn
+joblib
+python-dateutil
+requests
