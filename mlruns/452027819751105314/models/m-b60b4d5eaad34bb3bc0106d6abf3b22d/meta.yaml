@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/adity/Mtech/DMML/DMML_Assignment/mlruns/452027819751105314/models/m-b60b4d5eaad34bb3bc0106d6abf3b22d/artifacts
+creation_timestamp: 1755425009343
+experiment_id: '452027819751105314'
+last_updated_timestamp: 1755425014906
+model_id: m-b60b4d5eaad34bb3bc0106d6abf3b22d
+model_type: null
+name: model
+source_run_id: 74249c2c996a45c09230ac02083206f8
+status: 2
+status_message: null

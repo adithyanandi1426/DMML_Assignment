@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/adity/Mtech/DMML/DMML_Assignment/mlruns/452027819751105314/b4010894f2f84ddfba26ae23569fda39/artifacts
+end_time: 1755423299991
+entry_point_name: ''
+experiment_id: '452027819751105314'
+lifecycle_stage: active
+run_id: b4010894f2f84ddfba26ae23569fda39
+run_name: 20250817_LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755423299956
+status: 4
+tags: []
+user_id: adity

@@ -1,0 +1,11 @@
+feature_name,description,source_file,version,created_on
+total_value,Total value = monthly_spend * tenure,2025-08-16_customer_features.csv,v1,2025-08-17 14:48:48
+activity_score,Login activity score = logins / (days since last login + 1),2025-08-16_customer_features.csv,v1,2025-08-17 14:48:48
+total_value,Total value = monthly_spend * tenure,2025-08-16_customer_features.csv,v1,2025-08-17 15:14:48
+activity_score,Login activity score = logins / (days since last login + 1),2025-08-16_customer_features.csv,v1,2025-08-17 15:14:48
+total_value,Total value = monthly_spend * tenure,2025-08-16_customer_features.csv,v1,2025-08-17 15:33:16
+activity_score,Login activity score = logins / (days since last login + 1),2025-08-16_customer_features.csv,v1,2025-08-17 15:33:16
+total_value,Total value = monthly_spend * tenure,2025-08-17_customer_features.csv,v1,2025-08-17 15:46:05
+activity_score,Login activity score = logins / (days since last login + 1),2025-08-17_customer_features.csv,v1,2025-08-17 15:46:05
+total_value,Total value = monthly_spend * tenure,2025-08-17_customer_features.csv,v1,2025-08-17 16:19:10
+activity_score,Login activity score = logins / (days since last login + 1),2025-08-17_customer_features.csv,v1,2025-08-17 16:19:10

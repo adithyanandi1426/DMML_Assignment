@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/adity/Mtech/DMML/DMML_Assignment/mlruns/452027819751105314/b637541708dd4867bc982dfeb6e22503/artifacts
+end_time: 1755425017587
+entry_point_name: ''
+experiment_id: '452027819751105314'
+lifecycle_stage: active
+run_id: b637541708dd4867bc982dfeb6e22503
+run_name: 20250817_RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755425014952
+status: 3
+tags: []
+user_id: adity
