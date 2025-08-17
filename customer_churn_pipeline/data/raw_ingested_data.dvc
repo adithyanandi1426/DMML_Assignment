@@ -1,0 +1,6 @@
+outs:
+- md5: 7ea0156cee76e189d753f83b6425d6d0.dir
+  size: 35937
+  nfiles: 1
+  hash: md5
+  path: raw_ingested_data
