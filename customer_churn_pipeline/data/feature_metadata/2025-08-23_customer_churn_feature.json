@@ -5,7 +5,8 @@
         "num_unique_values": 62,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "The customer's age in years."
+        "description": "The customer's age in years.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Avg Monthly GB Download",
@@ -13,7 +14,8 @@
         "num_unique_values": 50,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Average monthly data download in GB."
+        "description": "Average monthly data download in GB.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Avg Monthly Long Distance Charges",
@@ -21,7 +23,8 @@
         "num_unique_values": 2666,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Average monthly long distance call charges."
+        "description": "Average monthly long distance call charges.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Churn",
@@ -29,7 +32,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer churned, 0 otherwise."
+        "description": "1 if the customer churned, 0 otherwise.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "City",
@@ -37,7 +41,8 @@
         "num_unique_values": 1085,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Customer's city of residence."
+        "description": "Customer's city of residence.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Contract",
@@ -45,7 +50,8 @@
         "num_unique_values": 3,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Contract type (Month-to-Month, One year, Two year)."
+        "description": "Contract type (Month-to-Month, One year, Two year).",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Country",
@@ -53,7 +59,8 @@
         "num_unique_values": 1,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Country where the customer resides."
+        "description": "Country where the customer resides.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Dependents",
@@ -61,7 +68,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has dependents, 0 otherwise."
+        "description": "1 if the customer has dependents, 0 otherwise.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Device Protection Plan",
@@ -69,7 +77,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has a device protection plan."
+        "description": "1 if the customer has a device protection plan.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Gender",
@@ -77,7 +86,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "The customer's gender."
+        "description": "The customer's gender.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Internet Service",
@@ -85,7 +95,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has internet service, 0 otherwise."
+        "description": "1 if the customer has internet service, 0 otherwise.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Internet Type",
@@ -93,7 +104,8 @@
         "num_unique_values": 3,
         "num_missing_values": 886,
         "percentage_missing": 20.97041420118343,
-        "description": "Type of internet connection (e.g., DSL, Fiber, Cable)."
+        "description": "Type of internet connection (e.g., DSL, Fiber, Cable).",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Latitude",
@@ -101,7 +113,8 @@
         "num_unique_values": 1594,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Geographical latitude of the customer."
+        "description": "Geographical latitude of the customer.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Longitude",
@@ -109,7 +122,8 @@
         "num_unique_values": 1593,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Geographical longitude of the customer."
+        "description": "Geographical longitude of the customer.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Married",
@@ -117,7 +131,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if married, 0 otherwise."
+        "description": "1 if married, 0 otherwise.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Monthly Charge",
@@ -125,7 +140,8 @@
         "num_unique_values": 1387,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Monthly bill for the customer."
+        "description": "Monthly bill for the customer.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Multiple Lines",
@@ -133,7 +149,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has multiple phone lines."
+        "description": "1 if the customer has multiple phone lines.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Number of Dependents",
@@ -141,7 +158,8 @@
         "num_unique_values": 8,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Total number of dependents for the customer."
+        "description": "Total number of dependents for the customer.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Number of Referrals",
@@ -149,7 +167,8 @@
         "num_unique_values": 12,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Number of people the customer referred."
+        "description": "Number of people the customer referred.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Offer",
@@ -157,7 +176,8 @@
         "num_unique_values": 5,
         "num_missing_values": 2324,
         "percentage_missing": 55.00591715976332,
-        "description": "Last marketing offer accepted by the customer."
+        "description": "Last marketing offer accepted by the customer.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Online Backup",
@@ -165,7 +185,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has online backup service."
+        "description": "1 if the customer has online backup service.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Online Security",
@@ -173,7 +194,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has online security service."
+        "description": "1 if the customer has online security service.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Paperless Billing",
@@ -181,7 +203,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer uses paperless billing."
+        "description": "1 if the customer uses paperless billing.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Partner",
@@ -189,7 +212,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has a partner."
+        "description": "1 if the customer has a partner.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Payment Method",
@@ -197,7 +221,8 @@
         "num_unique_values": 3,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Customer\u2019s chosen method of payment."
+        "description": "Customer\u2019s chosen method of payment.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Phone Service",
@@ -205,7 +230,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has phone service."
+        "description": "1 if the customer has phone service.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Population",
@@ -213,7 +239,8 @@
         "num_unique_values": 1539,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Estimated population in the customer's ZIP code."
+        "description": "Estimated population in the customer's ZIP code.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Premium Tech Support",
@@ -221,7 +248,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has premium tech support."
+        "description": "1 if the customer has premium tech support.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Quarter",
@@ -229,7 +257,8 @@
         "num_unique_values": 1,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Fiscal quarter (e.g., Q1, Q2, etc.)."
+        "description": "Fiscal quarter (e.g., Q1, Q2, etc.).",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Referred a Friend",
@@ -237,7 +266,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer referred a friend."
+        "description": "1 if the customer referred a friend.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Satisfaction Score",
@@ -245,7 +275,8 @@
         "num_unique_values": 5,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Customer satisfaction rating from 1 to 5."
+        "description": "Customer satisfaction rating from 1 to 5.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Senior Citizen",
@@ -253,7 +284,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if customer is aged 65 or older."
+        "description": "1 if customer is aged 65 or older.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "State",
@@ -261,7 +293,8 @@
         "num_unique_values": 1,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "State where the customer lives."
+        "description": "State where the customer lives.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Streaming Movies",
@@ -269,7 +302,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer subscribes to movie streaming."
+        "description": "1 if the customer subscribes to movie streaming.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Streaming Music",
@@ -277,7 +311,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer subscribes to music streaming."
+        "description": "1 if the customer subscribes to music streaming.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Streaming TV",
@@ -285,7 +320,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer subscribes to TV streaming."
+        "description": "1 if the customer subscribes to TV streaming.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Tenure in Months",
@@ -293,7 +329,8 @@
         "num_unique_values": 72,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Number of months the customer has stayed."
+        "description": "Number of months the customer has stayed.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Total Extra Data Charges",
@@ -301,7 +338,8 @@
         "num_unique_values": 16,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Total charges incurred for extra data."
+        "description": "Total charges incurred for extra data.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Total Long Distance Charges",
@@ -309,7 +347,8 @@
         "num_unique_values": 3705,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Total long distance call charges."
+        "description": "Total long distance call charges.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Total Refunds",
@@ -317,7 +356,8 @@
         "num_unique_values": 312,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "Total amount refunded to the customer."
+        "description": "Total amount refunded to the customer.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Under 30",
@@ -325,7 +365,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer is under 30 years old."
+        "description": "1 if the customer is under 30 years old.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Unlimited Data",
@@ -333,7 +374,8 @@
         "num_unique_values": 2,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "1 if the customer has unlimited data plan."
+        "description": "1 if the customer has unlimited data plan.",
+        "version_info": "2025-08-23"
     },
     {
         "feature_name": "Zip Code",
@@ -341,6 +383,7 @@
         "num_unique_values": 1594,
         "num_missing_values": 0,
         "percentage_missing": 0.0,
-        "description": "ZIP code of the customer\u2019s residence."
+        "description": "ZIP code of the customer\u2019s residence.",
+        "version_info": "2025-08-23"
     }
 ]

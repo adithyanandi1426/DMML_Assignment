@@ -118,7 +118,8 @@ for col in df.columns:
         "num_unique_values": int(df[col].nunique()),
         "num_missing_values": int(df[col].isnull().sum()),
         "percentage_missing": float((df[col].isnull().mean()) * 100),
-        "description": feature_descriptions.get(col, "No description available.")
+        "description": feature_descriptions.get(col, "No description available."),
+        "version_info": latest_partition
     }
     meta_store.append(metadata)
 
