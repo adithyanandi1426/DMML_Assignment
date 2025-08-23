@@ -41,8 +41,8 @@ feature_store_path = r"C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_
 meta_output_dir = r"C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\feature_metadata"
 os.makedirs(meta_output_dir, exist_ok=True)
 
-feature_with_date_csv = f"{latest_partition}_customer_churn_transformed.csv"
-feature_with_date_json = f"{latest_partition}_customer_churn_transformed.json"
+feature_with_date_csv = f"{latest_partition}_customer_churn_feature.csv"
+feature_with_date_json = f"{latest_partition}_customer_churn_feature.json"
 json_output_path = os.path.join(meta_output_dir, feature_with_date_json)
 csv_output_path = os.path.join(meta_output_dir, feature_with_date_csv)
 

@@ -1,0 +1,346 @@
+[
+    {
+        "feature_name": "Age",
+        "data_type": "int64",
+        "num_unique_values": 62,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "The customer's age in years."
+    },
+    {
+        "feature_name": "Avg Monthly GB Download",
+        "data_type": "int64",
+        "num_unique_values": 50,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Average monthly data download in GB."
+    },
+    {
+        "feature_name": "Avg Monthly Long Distance Charges",
+        "data_type": "float64",
+        "num_unique_values": 2666,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Average monthly long distance call charges."
+    },
+    {
+        "feature_name": "Churn",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer churned, 0 otherwise."
+    },
+    {
+        "feature_name": "City",
+        "data_type": "object",
+        "num_unique_values": 1085,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Customer's city of residence."
+    },
+    {
+        "feature_name": "Contract",
+        "data_type": "object",
+        "num_unique_values": 3,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Contract type (Month-to-Month, One year, Two year)."
+    },
+    {
+        "feature_name": "Country",
+        "data_type": "object",
+        "num_unique_values": 1,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Country where the customer resides."
+    },
+    {
+        "feature_name": "Dependents",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has dependents, 0 otherwise."
+    },
+    {
+        "feature_name": "Device Protection Plan",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has a device protection plan."
+    },
+    {
+        "feature_name": "Gender",
+        "data_type": "object",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "The customer's gender."
+    },
+    {
+        "feature_name": "Internet Service",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has internet service, 0 otherwise."
+    },
+    {
+        "feature_name": "Internet Type",
+        "data_type": "object",
+        "num_unique_values": 3,
+        "num_missing_values": 886,
+        "percentage_missing": 20.97041420118343,
+        "description": "Type of internet connection (e.g., DSL, Fiber, Cable)."
+    },
+    {
+        "feature_name": "Latitude",
+        "data_type": "float64",
+        "num_unique_values": 1594,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Geographical latitude of the customer."
+    },
+    {
+        "feature_name": "Longitude",
+        "data_type": "float64",
+        "num_unique_values": 1593,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Geographical longitude of the customer."
+    },
+    {
+        "feature_name": "Married",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if married, 0 otherwise."
+    },
+    {
+        "feature_name": "Monthly Charge",
+        "data_type": "float64",
+        "num_unique_values": 1387,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Monthly bill for the customer."
+    },
+    {
+        "feature_name": "Multiple Lines",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has multiple phone lines."
+    },
+    {
+        "feature_name": "Number of Dependents",
+        "data_type": "int64",
+        "num_unique_values": 8,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Total number of dependents for the customer."
+    },
+    {
+        "feature_name": "Number of Referrals",
+        "data_type": "int64",
+        "num_unique_values": 12,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Number of people the customer referred."
+    },
+    {
+        "feature_name": "Offer",
+        "data_type": "object",
+        "num_unique_values": 5,
+        "num_missing_values": 2324,
+        "percentage_missing": 55.00591715976332,
+        "description": "Last marketing offer accepted by the customer."
+    },
+    {
+        "feature_name": "Online Backup",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has online backup service."
+    },
+    {
+        "feature_name": "Online Security",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has online security service."
+    },
+    {
+        "feature_name": "Paperless Billing",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer uses paperless billing."
+    },
+    {
+        "feature_name": "Partner",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has a partner."
+    },
+    {
+        "feature_name": "Payment Method",
+        "data_type": "object",
+        "num_unique_values": 3,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Customer\u2019s chosen method of payment."
+    },
+    {
+        "feature_name": "Phone Service",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has phone service."
+    },
+    {
+        "feature_name": "Population",
+        "data_type": "int64",
+        "num_unique_values": 1539,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Estimated population in the customer's ZIP code."
+    },
+    {
+        "feature_name": "Premium Tech Support",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has premium tech support."
+    },
+    {
+        "feature_name": "Quarter",
+        "data_type": "object",
+        "num_unique_values": 1,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Fiscal quarter (e.g., Q1, Q2, etc.)."
+    },
+    {
+        "feature_name": "Referred a Friend",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer referred a friend."
+    },
+    {
+        "feature_name": "Satisfaction Score",
+        "data_type": "int64",
+        "num_unique_values": 5,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Customer satisfaction rating from 1 to 5."
+    },
+    {
+        "feature_name": "Senior Citizen",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if customer is aged 65 or older."
+    },
+    {
+        "feature_name": "State",
+        "data_type": "object",
+        "num_unique_values": 1,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "State where the customer lives."
+    },
+    {
+        "feature_name": "Streaming Movies",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer subscribes to movie streaming."
+    },
+    {
+        "feature_name": "Streaming Music",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer subscribes to music streaming."
+    },
+    {
+        "feature_name": "Streaming TV",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer subscribes to TV streaming."
+    },
+    {
+        "feature_name": "Tenure in Months",
+        "data_type": "int64",
+        "num_unique_values": 72,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Number of months the customer has stayed."
+    },
+    {
+        "feature_name": "Total Extra Data Charges",
+        "data_type": "int64",
+        "num_unique_values": 16,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Total charges incurred for extra data."
+    },
+    {
+        "feature_name": "Total Long Distance Charges",
+        "data_type": "float64",
+        "num_unique_values": 3705,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Total long distance call charges."
+    },
+    {
+        "feature_name": "Total Refunds",
+        "data_type": "float64",
+        "num_unique_values": 312,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "Total amount refunded to the customer."
+    },
+    {
+        "feature_name": "Under 30",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer is under 30 years old."
+    },
+    {
+        "feature_name": "Unlimited Data",
+        "data_type": "int64",
+        "num_unique_values": 2,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "1 if the customer has unlimited data plan."
+    },
+    {
+        "feature_name": "Zip Code",
+        "data_type": "int64",
+        "num_unique_values": 1594,
+        "num_missing_values": 0,
+        "percentage_missing": 0.0,
+        "description": "ZIP code of the customer\u2019s residence."
+    }
+]

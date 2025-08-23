@@ -7,3 +7,6 @@
 2025-08-23 16:38:52,208 - INFO - Storing features...
 2025-08-23 16:38:52,295 - INFO - Saving feature metadata to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\feature_metadata\2025-08-23_customer_churn_transformed.csv
 2025-08-23 16:38:52,303 - INFO - Features stored to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\processed\feature_store.csv
+2025-08-23 16:42:19,987 - INFO - Storing features...
+2025-08-23 16:42:20,069 - INFO - Saving feature metadata to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\feature_metadata\2025-08-23_customer_churn_feature.csv
+2025-08-23 16:42:20,077 - INFO - Features stored to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\processed\feature_store.csv
