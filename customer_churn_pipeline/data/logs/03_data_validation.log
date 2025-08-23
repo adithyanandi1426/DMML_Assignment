@@ -1,3 +1,4 @@
-2025-08-17 16:18:59 - INFO - Starting data validation...
-2025-08-17 16:18:59 - INFO - Loaded data from C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-17\customer_churn_raw.csv with 1000 rows and 10 columns.
-2025-08-17 16:18:59 - INFO - Data validation completed.
+2025-08-22 10:57:48 - INFO - Starting custom data validation...
+2025-08-22 10:57:48 - INFO - Data loaded from C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_data_from_API\telco_customer_churn.csv
+2025-08-22 10:57:48 - INFO - Data quality report saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_data_from_API\telco_customer_churn_data_quality_report.csv
+2025-08-22 10:57:48 - INFO - Data validation completed.

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/adity/Mtech/DMML/DMML_Assignment/customer_churn_pipeline/scripts_v2/mlruns/535970423357848778/072f6abff08541358c34170ad8da57d7/artifacts
+end_time: 1755847899444
+entry_point_name: ''
+experiment_id: '535970423357848778'
+lifecycle_stage: active
+run_id: 072f6abff08541358c34170ad8da57d7
+run_name: 20250822_LogisticRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755847898804
+status: 4
+tags: []
+user_id: adity

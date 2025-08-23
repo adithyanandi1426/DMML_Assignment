@@ -1,8 +1,0 @@
-Check,Column,Result
-Missing Values,-,No missing values found
-Duplicate Rows,-,No duplicates found
-Data Type Check,-,All types matched expectations
-Invalid Age,age,All ages within range
-Negative Spend,monthly_spend,No negative spends
-Gender Check,gender,All genders valid
-Outlier - High Spend,monthly_spend,No high spend outliers

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/975472721470271704/7ef5c6acb4fb4f718d01106e34049375/artifacts
+deleted_time: 1755884780651
+end_time: 1755882412563
+entry_point_name: ''
+experiment_id: '975472721470271704'
+lifecycle_stage: deleted
+run_id: 7ef5c6acb4fb4f718d01106e34049375
+run_name: unique-dog-711
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755882408830
+status: 3
+tags: []
+user_id: adity

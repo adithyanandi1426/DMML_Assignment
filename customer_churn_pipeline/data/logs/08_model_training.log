@@ -1,0 +1,6 @@
+2025-08-23 13:30:01 - INFO - Started model training for Logistic Regression and Random Forest
+2025-08-23 13:34:17 - INFO - Started model training for Logistic Regression and Random Forest
+2025-08-23 13:34:19 - INFO - Training RandomForest...
+2025-08-23 13:34:29 - INFO - RandomForest model saved to randomforest_churn_model.pkl
+2025-08-23 13:34:29 - INFO - Training LogisticRegression...
+2025-08-23 13:34:34 - INFO - LogisticRegression model saved to logisticregression_churn_model.pkl

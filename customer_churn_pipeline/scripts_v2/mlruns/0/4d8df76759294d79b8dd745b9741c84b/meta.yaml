@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/adity/Mtech/DMML/DMML_Assignment/customer_churn_pipeline/scripts_v2/mlruns/0/4d8df76759294d79b8dd745b9741c84b/artifacts
+end_time: 1755880298164
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4d8df76759294d79b8dd745b9741c84b
+run_name: victorious-dog-826
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755880298146
+status: 4
+tags: []
+user_id: adity

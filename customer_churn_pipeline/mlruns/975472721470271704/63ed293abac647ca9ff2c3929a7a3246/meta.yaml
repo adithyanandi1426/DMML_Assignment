@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/975472721470271704/63ed293abac647ca9ff2c3929a7a3246/artifacts
+deleted_time: 1755884780651
+end_time: 1755882898992
+entry_point_name: ''
+experiment_id: '975472721470271704'
+lifecycle_stage: deleted
+run_id: 63ed293abac647ca9ff2c3929a7a3246
+run_name: amusing-wren-471
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755882898975
+status: 4
+tags: []
+user_id: adity

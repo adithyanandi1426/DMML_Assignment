@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/975472721470271704/dee8724fb0ff4192a546aa95ca4ff444/artifacts
+deleted_time: 1755884780650
+end_time: 1755882831948
+entry_point_name: ''
+experiment_id: '975472721470271704'
+lifecycle_stage: deleted
+run_id: dee8724fb0ff4192a546aa95ca4ff444
+run_name: clean-kit-337
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755882831934
+status: 4
+tags: []
+user_id: adity

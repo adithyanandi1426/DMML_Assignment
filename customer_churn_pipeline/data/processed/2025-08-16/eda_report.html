@@ -1,0 +1,191 @@
+
+<html>
+<head>
+    <title>EDA Report - Customer Churn</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { color: #2c3e50; }
+        img { max-width: 700px; margin-bottom: 20px; }
+        .table { border-collapse: collapse; width: 100%; }
+        .table, .table th, .table td { border: 1px solid #ddd; }
+        .table th, .table td { padding: 8px; text-align: left; }
+        .table-striped tr:nth-child(even) { background-color: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <h1>Exploratory Data Analysis Report</h1>
+    <h2>Summary Statistics</h2>
+    <table border="1" class="dataframe table table-striped">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Unnamed: 0</th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>customer_id</td>
+      <td>1000.0</td>
+      <td>0.000000e+00</td>
+      <td>1.000500</td>
+      <td>-1.730320</td>
+      <td>-0.865160</td>
+      <td>0.000000</td>
+      <td>0.865160</td>
+      <td>1.730320</td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td>1000.0</td>
+      <td>-1.634248e-16</td>
+      <td>1.000500</td>
+      <td>-1.723158</td>
+      <td>-0.855539</td>
+      <td>0.012080</td>
+      <td>0.812959</td>
+      <td>1.680578</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>1000.0</td>
+      <td>5.240000e-01</td>
+      <td>0.499674</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <td>tenure_months</td>
+      <td>1000.0</td>
+      <td>6.927792e-17</td>
+      <td>1.000500</td>
+      <td>-1.700679</td>
+      <td>-0.866077</td>
+      <td>0.028138</td>
+      <td>0.862739</td>
+      <td>1.756954</td>
+    </tr>
+    <tr>
+      <td>monthly_spend</td>
+      <td>1000.0</td>
+      <td>-2.913225e-16</td>
+      <td>1.000500</td>
+      <td>-1.692367</td>
+      <td>-0.912082</td>
+      <td>0.006476</td>
+      <td>0.867186</td>
+      <td>1.719256</td>
+    </tr>
+    <tr>
+      <td>num_logins</td>
+      <td>1000.0</td>
+      <td>-3.481659e-16</td>
+      <td>1.000500</td>
+      <td>-2.974707</td>
+      <td>-0.671233</td>
+      <td>0.019810</td>
+      <td>0.710852</td>
+      <td>3.475022</td>
+    </tr>
+    <tr>
+      <td>num_transactions</td>
+      <td>1000.0</td>
+      <td>-1.931788e-16</td>
+      <td>1.000500</td>
+      <td>-2.262139</td>
+      <td>-0.664358</td>
+      <td>-0.025245</td>
+      <td>0.613868</td>
+      <td>3.489875</td>
+    </tr>
+    <tr>
+      <td>is_premium_member</td>
+      <td>1000.0</td>
+      <td>-5.151435e-17</td>
+      <td>1.000500</td>
+      <td>-0.667148</td>
+      <td>-0.667148</td>
+      <td>-0.667148</td>
+      <td>1.498917</td>
+      <td>1.498917</td>
+    </tr>
+    <tr>
+      <td>last_login_days_ago</td>
+      <td>1000.0</td>
+      <td>-4.707346e-17</td>
+      <td>1.000500</td>
+      <td>-1.726872</td>
+      <td>-0.860432</td>
+      <td>0.006007</td>
+      <td>0.872447</td>
+      <td>1.681124</td>
+    </tr>
+    <tr>
+      <td>churn</td>
+      <td>1000.0</td>
+      <td>2.220446e-17</td>
+      <td>1.000500</td>
+      <td>-0.105463</td>
+      <td>-0.105463</td>
+      <td>-0.105463</td>
+      <td>-0.105463</td>
+      <td>9.482040</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Visualizations</h2>
+
+        <h3>customer_id - Histogram</h3>
+        <img src="eda\customer_id_hist.png">
+        <h3>customer_id - Boxplot</h3>
+        <img src="eda\customer_id_boxplot.png">
+    
+        <h3>age - Histogram</h3>
+        <img src="eda\age_hist.png">
+        <h3>age - Boxplot</h3>
+        <img src="eda\age_boxplot.png">
+    
+        <h3>tenure_months - Histogram</h3>
+        <img src="eda\tenure_months_hist.png">
+        <h3>tenure_months - Boxplot</h3>
+        <img src="eda\tenure_months_boxplot.png">
+    
+        <h3>monthly_spend - Histogram</h3>
+        <img src="eda\monthly_spend_hist.png">
+        <h3>monthly_spend - Boxplot</h3>
+        <img src="eda\monthly_spend_boxplot.png">
+    
+        <h3>num_logins - Histogram</h3>
+        <img src="eda\num_logins_hist.png">
+        <h3>num_logins - Boxplot</h3>
+        <img src="eda\num_logins_boxplot.png">
+    
+        <h3>num_transactions - Histogram</h3>
+        <img src="eda\num_transactions_hist.png">
+        <h3>num_transactions - Boxplot</h3>
+        <img src="eda\num_transactions_boxplot.png">
+    
+        <h3>is_premium_member - Histogram</h3>
+        <img src="eda\is_premium_member_hist.png">
+        <h3>is_premium_member - Boxplot</h3>
+        <img src="eda\is_premium_member_boxplot.png">
+    
+        <h3>last_login_days_ago - Histogram</h3>
+        <img src="eda\last_login_days_ago_hist.png">
+        <h3>last_login_days_ago - Boxplot</h3>
+        <img src="eda\last_login_days_ago_boxplot.png">
+    
+        <h3>churn - Histogram</h3>
+        <img src="eda\churn_hist.png">
+        <h3>churn - Boxplot</h3>
+        <img src="eda\churn_boxplot.png">
+    </body></html>

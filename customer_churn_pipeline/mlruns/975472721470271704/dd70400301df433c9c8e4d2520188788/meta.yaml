@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/975472721470271704/dd70400301df433c9c8e4d2520188788/artifacts
+deleted_time: 1755884780657
+end_time: 1755880622261
+entry_point_name: ''
+experiment_id: '975472721470271704'
+lifecycle_stage: deleted
+run_id: dd70400301df433c9c8e4d2520188788
+run_name: unleashed-kit-928
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755880617870
+status: 3
+tags: []
+user_id: adity

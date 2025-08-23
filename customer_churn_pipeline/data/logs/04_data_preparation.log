@@ -1,8 +1,0 @@
-2025-08-17 16:19:01 - INFO - Starting data preparation...
-2025-08-17 16:19:01 - INFO - Loaded data from C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-17\customer_churn_raw.csv with shape: (1000, 10)
-2025-08-17 16:19:01 - INFO - Unique values in 'churn': [0 1]
-2025-08-17 16:19:01 - INFO - Handled missing values and encoded categorical columns
-2025-08-17 16:19:01 - INFO - Standardized numeric columns
-2025-08-17 16:19:01 - INFO - Saved cleaned data to C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\processed\2025-08-17\cleaned_customer_churn.csv
-2025-08-17 16:19:03 - INFO - Generated EDA reports (histograms, boxplots, statistics)
-2025-08-17 16:19:03 - INFO - Data preparation completed successfully.

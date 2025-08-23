@@ -1,1 +1,8 @@
 ./dmml_env
+./mlruns
+./mlruns_temp
+./__pycache__
+./mlartifacts
+./customer_churn_pipeline/data/mlartifacts
+./customer_churn_pipeline/data/mlruns
+./customer_churn_pipeline/data/mlruns_temp
