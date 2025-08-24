@@ -343,3 +343,26 @@
 2025-08-24 10:48:47 - INFO - Read 4225 rows from Snowflake
 2025-08-24 10:48:47 - INFO - Snowflake connection closed after successful data extraction
 2025-08-24 10:48:47 - INFO - Script completed successfully
+2025-08-24 12:00:48 - INFO - Starting raw data storage script
+2025-08-24 12:00:48 - INFO - Environment variables loaded
+2025-08-24 12:00:48 - INFO - Log file path: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\logs\03_raw_data_storage.log
+2025-08-24 12:00:48 - INFO - Setting up Snowflake connection config
+2025-08-24 12:00:48 - INFO - Snowflake connection config set
+2025-08-24 12:00:48 - INFO - Setting up date partition and output paths
+2025-08-24 12:00:48 - INFO - Output folder base: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data
+2025-08-24 12:00:48 - INFO - Output folder: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-24
+2025-08-24 12:00:48 - INFO - Output file: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-24\customer_churn_raw.csv
+2025-08-24 12:00:48 - INFO - Date partition and output paths set
+2025-08-24 12:00:48 - INFO - Connecting to Snowflake
+2025-08-24 12:00:48 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 12:00:48 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 12:00:49 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C8624875C0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 12:00:49 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C86255EE90>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 12:00:49 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C86255E990>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 12:00:49 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C862565FD0>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 12:00:51 - INFO - Connected to Snowflake
+2025-08-24 12:00:53 - INFO - Data read from Snowflake successfully
+2025-08-24 12:00:53 - INFO - Data saved to partitioned folder: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-24\customer_churn_raw.csv
+2025-08-24 12:00:53 - INFO - Read 4225 rows from Snowflake
+2025-08-24 12:00:53 - INFO - Snowflake connection closed after successful data extraction
+2025-08-24 12:00:53 - INFO - Script completed successfully

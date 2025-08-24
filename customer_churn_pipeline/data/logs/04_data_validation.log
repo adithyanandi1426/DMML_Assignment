@@ -88,3 +88,7 @@
 2025-08-24 10:48:49 - INFO - Data loaded from C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-24\customer_churn_raw.csv
 2025-08-24 10:48:49 - INFO - Data quality report saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\docs\data_quality_report\2025-08-24\data_validation_report.csv
 2025-08-24 10:48:49 - INFO - Data validation completed.
+2025-08-24 12:00:55 - INFO - Starting custom data validation...
+2025-08-24 12:00:55 - INFO - Data loaded from C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\raw_ingested_data\2025-08-24\customer_churn_raw.csv
+2025-08-24 12:00:55 - INFO - Data quality report saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\docs\data_quality_report\2025-08-24\data_validation_report.csv
+2025-08-24 12:00:55 - INFO - Data validation completed.

@@ -262,3 +262,19 @@
 2025-08-24 10:48:41 - INFO - Uploaded 4225 rows to 'customer_churn' in Snowflake.
 2025-08-24 10:48:42 - INFO - Connection to Snowflake closed.
 2025-08-24 10:48:42 - INFO - customer churn data ingested to snowflake successfully.
+2025-08-24 12:00:36 - INFO - Starting data ingestion process...Into snowflake
+2025-08-24 12:00:36 - INFO - customer churn data read from csv successfully.
+2025-08-24 12:00:36 - INFO - Data shape: (4225, 52)
+2025-08-24 12:00:36 - INFO - Data columns: ['Age', 'Avg Monthly GB Download', 'Avg Monthly Long Distance Charges', 'Churn', 'Churn Category', 'Churn Reason', 'Churn Score', 'City', 'CLTV', 'Contract', 'Country', 'Customer ID', 'Customer Status', 'Dependents', 'Device Protection Plan', 'Gender', 'Internet Service', 'Internet Type', 'Lat Long', 'Latitude', 'Longitude', 'Married', 'Monthly Charge', 'Multiple Lines', 'Number of Dependents', 'Number of Referrals', 'Offer', 'Online Backup', 'Online Security', 'Paperless Billing', 'Partner', 'Payment Method', 'Phone Service', 'Population', 'Premium Tech Support', 'Quarter', 'Referred a Friend', 'Satisfaction Score', 'Senior Citizen', 'State', 'Streaming Movies', 'Streaming Music', 'Streaming TV', 'Tenure in Months', 'Total Charges', 'Total Extra Data Charges', 'Total Long Distance Charges', 'Total Refunds', 'Total Revenue', 'Under 30', 'Unlimited Data', 'Zip Code']
+2025-08-24 12:00:36 - INFO - establishing connection to snowflake
+2025-08-24 12:00:36 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 12:00:36 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 12:00:36 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C9A6C8F6F0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 12:00:36 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C9A6DD7250>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 12:00:36 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C9A6DDE3C0>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 12:00:36 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001C9A6DD6E90>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 12:00:40 - INFO - Connection to Snowflake established successfully.
+2025-08-24 12:00:40 - INFO - Uploading data to Snowflake...
+2025-08-24 12:00:46 - INFO - Uploaded 4225 rows to 'customer_churn' in Snowflake.
+2025-08-24 12:00:46 - INFO - Connection to Snowflake closed.
+2025-08-24 12:00:46 - INFO - customer churn data ingested to snowflake successfully.

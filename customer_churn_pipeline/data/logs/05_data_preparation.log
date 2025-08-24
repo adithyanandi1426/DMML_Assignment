@@ -99,3 +99,9 @@
 2025-08-24 10:48:50,143 - INFO - Duplicates removed if any. New shape: (4225, 52)
 2025-08-24 10:48:50,143 - INFO - Data cleaned. New shape: (4225, 52)
 2025-08-24 10:48:50,173 - INFO - Cleaned data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\processed\2025-08-24\customer_churn_cleaned.csv
+2025-08-24 12:00:56,689 - INFO - Starting data preparation...
+2025-08-24 12:00:56,718 - INFO - Loaded dataset with 4225 rows and 52 columns
+2025-08-24 12:00:56,718 - INFO - Cleaning data...
+2025-08-24 12:00:56,730 - INFO - Duplicates removed if any. New shape: (4225, 52)
+2025-08-24 12:00:56,730 - INFO - Data cleaned. New shape: (4225, 52)
+2025-08-24 12:00:56,771 - INFO - Cleaned data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\processed\2025-08-24\customer_churn_cleaned.csv

@@ -607,3 +607,396 @@ See https://docs.prefect.io/v3/concepts/server#how-to-guides for more informatio
 2025-08-24 10:49:09 - INFO - Finished in state Completed()
 2025-08-24 10:49:09 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
 2025-08-24 10:49:09 - INFO - Stopping temporary server on http://127.0.0.1:8223
+2025-08-24 11:57:51 - INFO - Orchestration script started.
+2025-08-24 11:57:53 - INFO - Starting temporary server on http://127.0.0.1:8684
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 11:57:58 - INFO - HTTP Request: GET http://127.0.0.1:8684/api/health "HTTP/1.1 200 OK"
+2025-08-24 11:57:58 - INFO - HTTP Request: GET http://127.0.0.1:8684/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 11:57:58 - INFO - HTTP Request: GET http://127.0.0.1:8684/api/csrf-token?client=767da555-fe1a-45ba-97ce-2584dc71a025 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 11:57:58 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 11:57:58 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 11:57:58 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/flow_runs/2d205de9-71e3-4224-8c42-08447f0c8ab2/set_state "HTTP/1.1 201 Created"
+2025-08-24 11:57:58 - INFO - HTTP Request: GET http://127.0.0.1:8684/api/flow_runs/2d205de9-71e3-4224-8c42-08447f0c8ab2 "HTTP/1.1 200 OK"
+2025-08-24 11:57:58 - INFO - Beginning flow run 'lyrical-pigeon' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 11:57:59 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py)
+2025-08-24 11:57:59 - INFO - HTTP Request: GET http://127.0.0.1:8684/api/flows/358a1e52-cc1e-4411-9c6d-567ba31dc3ef "HTTP/1.1 200 OK"
+2025-08-24 11:58:01 - INFO - HTTP Request: GET http://127.0.0.1:8684/api/csrf-token?client=03ece8e7-265b-4aef-b494-205c0edb6bd4 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 11:58:01 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 11:58:20 - ERROR - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py failed:
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py", line 70, in <module>
+    df.to_csv(OUTPUT_CSV, index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\data\\raw_data_from_API\\telco_customer_churn.csv'
+
+2025-08-24 11:58:20 - ERROR - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py failed:
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py", line 70, in <module>
+    df.to_csv(OUTPUT_CSV, index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\data\\raw_data_from_API\\telco_customer_churn.csv'
+
+2025-08-24 11:58:20 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:58:20 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:58:20 - INFO - Task run failed with exception: CalledProcessError(1, ['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py'], '', 'Traceback (most recent call last):\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py", line 70, in <module>\n    df.to_csv(OUTPUT_CSV, index=False)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\util\\_decorators.py", line 333, in wrapper\n    return func(*args, **kwargs)\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\core\\generic.py", line 3986, in to_csv\n    return DataFrameRenderer(formatter).to_csv(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        path_or_buf,\n        ^^^^^^^^^^^^\n    ...<14 lines>...\n        storage_options=storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\format.py", line 1014, in to_csv\n    csv_formatter.save()\n    ~~~~~~~~~~~~~~~~~~^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py", line 251, in save\n    with get_handle(\n         ~~~~~~~~~~^\n        self.filepath_or_buffer,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        storage_options=self.storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ) as handles:\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\common.py", line 873, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline="",\n    )\nPermissionError: [Errno 13] Permission denied: \'C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\customer_churn_pipeline\\\\data\\\\raw_data_from_API\\\\telco_customer_churn.csv\'\n') - Retry 1/2 will start 30 second(s) from now
+2025-08-24 11:58:21 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 11:58:50 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py)
+2025-08-24 11:58:51 - ERROR - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py failed:
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py", line 70, in <module>
+    df.to_csv(OUTPUT_CSV, index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\data\\raw_data_from_API\\telco_customer_churn.csv'
+
+2025-08-24 11:58:51 - ERROR - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py failed:
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py", line 70, in <module>
+    df.to_csv(OUTPUT_CSV, index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\data\\raw_data_from_API\\telco_customer_churn.csv'
+
+2025-08-24 11:58:51 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:58:51 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:58:51 - INFO - Task run failed with exception: CalledProcessError(1, ['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py'], '', 'Traceback (most recent call last):\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py", line 70, in <module>\n    df.to_csv(OUTPUT_CSV, index=False)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\util\\_decorators.py", line 333, in wrapper\n    return func(*args, **kwargs)\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\core\\generic.py", line 3986, in to_csv\n    return DataFrameRenderer(formatter).to_csv(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        path_or_buf,\n        ^^^^^^^^^^^^\n    ...<14 lines>...\n        storage_options=storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\format.py", line 1014, in to_csv\n    csv_formatter.save()\n    ~~~~~~~~~~~~~~~~~~^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py", line 251, in save\n    with get_handle(\n         ~~~~~~~~~~^\n        self.filepath_or_buffer,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        storage_options=self.storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ) as handles:\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\common.py", line 873, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline="",\n    )\nPermissionError: [Errno 13] Permission denied: \'C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\customer_churn_pipeline\\\\data\\\\raw_data_from_API\\\\telco_customer_churn.csv\'\n') - Retry 2/2 will start 30 second(s) from now
+2025-08-24 11:58:53 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 11:59:22 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py)
+2025-08-24 11:59:23 - ERROR - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py failed:
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py", line 70, in <module>
+    df.to_csv(OUTPUT_CSV, index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\data\\raw_data_from_API\\telco_customer_churn.csv'
+
+2025-08-24 11:59:23 - ERROR - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py failed:
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py", line 70, in <module>
+    df.to_csv(OUTPUT_CSV, index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\core\generic.py", line 3986, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\data\\raw_data_from_API\\telco_customer_churn.csv'
+
+2025-08-24 11:59:23 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:59:23 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:59:23 - ERROR - Task run failed with exception: CalledProcessError(1, ['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py'], '', 'Traceback (most recent call last):\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py", line 70, in <module>\n    df.to_csv(OUTPUT_CSV, index=False)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\util\\_decorators.py", line 333, in wrapper\n    return func(*args, **kwargs)\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\core\\generic.py", line 3986, in to_csv\n    return DataFrameRenderer(formatter).to_csv(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        path_or_buf,\n        ^^^^^^^^^^^^\n    ...<14 lines>...\n        storage_options=storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\format.py", line 1014, in to_csv\n    csv_formatter.save()\n    ~~~~~~~~~~~~~~~~~~^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py", line 251, in save\n    with get_handle(\n         ~~~~~~~~~~^\n        self.filepath_or_buffer,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        storage_options=self.storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ) as handles:\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\common.py", line 873, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline="",\n    )\nPermissionError: [Errno 13] Permission denied: \'C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\customer_churn_pipeline\\\\data\\\\raw_data_from_API\\\\telco_customer_churn.csv\'\n') - Retries are exhausted
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 857, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1487, in run_task_sync
+    engine.call_task_fn(txn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 874, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:59:23 - ERROR - Finished in state Failed("Task run encountered an exception CalledProcessError: Command '['C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\dmml_env\\\\Scripts\\\\python.exe', 'C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\customer_churn_pipeline\\\\scripts\\\\01_data_fetching\\\\data_fetch.py']' returned non-zero exit status 1.")
+2025-08-24 11:59:23 - ERROR - Encountered exception during execution: CalledProcessError(1, ['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py'], '', 'Traceback (most recent call last):\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py", line 70, in <module>\n    df.to_csv(OUTPUT_CSV, index=False)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\util\\_decorators.py", line 333, in wrapper\n    return func(*args, **kwargs)\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\core\\generic.py", line 3986, in to_csv\n    return DataFrameRenderer(formatter).to_csv(\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        path_or_buf,\n        ^^^^^^^^^^^^\n    ...<14 lines>...\n        storage_options=storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\format.py", line 1014, in to_csv\n    csv_formatter.save()\n    ~~~~~~~~~~~~~~~~~~^^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py", line 251, in save\n    with get_handle(\n         ~~~~~~~~~~^\n        self.filepath_or_buffer,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        storage_options=self.storage_options,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ) as handles:\n    ^\n  File "C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Lib\\site-packages\\pandas\\io\\common.py", line 873, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline="",\n    )\nPermissionError: [Errno 13] Permission denied: \'C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\customer_churn_pipeline\\\\data\\\\raw_data_from_API\\\\telco_customer_churn.csv\'\n')
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 782, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 1397, in run_flow_sync
+    engine.call_flow_fn()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 802, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 74, in churn_pipeline_flow
+    run_script.with_options(name=script_name)(script_path, script_name=script_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\tasks.py", line 1139, in __call__
+    return run_task(
+        task=self,
+    ...<2 lines>...
+        return_type=return_type,
+    )
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1714, in run_task
+    return run_task_sync(**kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1489, in run_task_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 478, in result
+    raise self._raised
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 857, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1487, in run_task_sync
+    engine.call_task_fn(txn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 874, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "c:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\09_orchestrate\orchestrate.py", line 48, in run_script
+    raise subprocess.CalledProcessError(result.returncode, result.args, result.stdout, result.stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\dmml_env\\Scripts\\python.exe', 'C:\\Users\\adity\\Mtech\\DMML\\DMML_Assignment\\customer_churn_pipeline\\scripts\\01_data_fetching\\data_fetch.py']' returned non-zero exit status 1.
+2025-08-24 11:59:23 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/flow_runs/2d205de9-71e3-4224-8c42-08447f0c8ab2/set_state "HTTP/1.1 201 Created"
+2025-08-24 11:59:23 - INFO - Finished in state Failed("Flow run encountered an exception: CalledProcessError: Command '['C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\dmml_env\\\\Scripts\\\\python.exe', 'C:\\\\Users\\\\adity\\\\Mtech\\\\DMML\\\\DMML_Assignment\\\\customer_churn_pipeline\\\\scripts\\\\01_data_fetching\\\\data_fetch.py']' returned non-zero exit status 1.")
+2025-08-24 11:59:23 - INFO - HTTP Request: POST http://127.0.0.1:8684/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 11:59:23 - INFO - Stopping temporary server on http://127.0.0.1:8684
+2025-08-24 12:00:03 - INFO - Orchestration script started.
+2025-08-24 12:00:05 - INFO - Starting temporary server on http://127.0.0.1:8943
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 12:00:10 - INFO - HTTP Request: GET http://127.0.0.1:8943/api/health "HTTP/1.1 200 OK"
+2025-08-24 12:00:11 - INFO - HTTP Request: GET http://127.0.0.1:8943/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 12:00:11 - INFO - HTTP Request: GET http://127.0.0.1:8943/api/csrf-token?client=0db61aaf-6b83-4625-a544-3f3c1b957f11 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 12:00:11 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 12:00:11 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 12:00:11 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/flow_runs/3db772fb-7b41-4aa9-b933-eb9b955af159/set_state "HTTP/1.1 201 Created"
+2025-08-24 12:00:11 - INFO - HTTP Request: GET http://127.0.0.1:8943/api/flow_runs/3db772fb-7b41-4aa9-b933-eb9b955af159 "HTTP/1.1 200 OK"
+2025-08-24 12:00:11 - INFO - Beginning flow run 'cautious-butterfly' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 12:00:11 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py)
+2025-08-24 12:00:11 - INFO - HTTP Request: GET http://127.0.0.1:8943/api/flows/358a1e52-cc1e-4411-9c6d-567ba31dc3ef "HTTP/1.1 200 OK"
+2025-08-24 12:00:13 - INFO - HTTP Request: GET http://127.0.0.1:8943/api/csrf-token?client=2be2583b-1006-47f7-a5c5-ae5575af4da8 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 12:00:13 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:00:33 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py completed successfully.
+2025-08-24 12:00:33 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\01_data_fetching\data_fetch.py completed successfully.
+2025-08-24 12:00:33 - INFO - Finished in state Completed()
+2025-08-24 12:00:33 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:00:34 - INFO - Starting Data Ingestion (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\02_data_ingestion\data_ingest.py)
+2025-08-24 12:00:47 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\02_data_ingestion\data_ingest.py completed successfully.
+2025-08-24 12:00:47 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\02_data_ingestion\data_ingest.py completed successfully.
+2025-08-24 12:00:47 - INFO - Finished in state Completed()
+2025-08-24 12:00:47 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:00:47 - INFO - Starting Raw Data Storage (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\03_raw_data_storage\data_storage.py)
+2025-08-24 12:00:54 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\03_raw_data_storage\data_storage.py completed successfully.
+2025-08-24 12:00:54 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\03_raw_data_storage\data_storage.py completed successfully.
+2025-08-24 12:00:54 - INFO - Finished in state Completed()
+2025-08-24 12:00:54 - INFO - Starting Data Validation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\04_data_validation\data_validation.py)
+2025-08-24 12:00:55 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\04_data_validation\data_validation.py completed successfully.
+2025-08-24 12:00:55 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\04_data_validation\data_validation.py completed successfully.
+2025-08-24 12:00:55 - INFO - Finished in state Completed()
+2025-08-24 12:00:55 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:00:56 - INFO - Starting Data Preparation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\05_data_preparation\data_preparation.py)
+2025-08-24 12:00:56 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\05_data_preparation\data_preparation.py completed successfully.
+2025-08-24 12:00:56 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\05_data_preparation\data_preparation.py completed successfully.
+2025-08-24 12:00:56 - INFO - Finished in state Completed()
+2025-08-24 12:00:57 - INFO - Starting Data Transformation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\06_data_transformation_and_storage\data_transform.py)
+2025-08-24 12:00:57 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:01:06 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\06_data_transformation_and_storage\data_transform.py completed successfully.
+2025-08-24 12:01:06 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\06_data_transformation_and_storage\data_transform.py completed successfully.
+2025-08-24 12:01:06 - INFO - Finished in state Completed()
+2025-08-24 12:01:07 - INFO - Starting Feature Store (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\07_feature_store\feature_store.py)
+2025-08-24 12:01:07 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:01:08 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\07_feature_store\feature_store.py completed successfully.
+2025-08-24 12:01:08 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\07_feature_store\feature_store.py completed successfully.
+2025-08-24 12:01:08 - INFO - Finished in state Completed()
+2025-08-24 12:01:09 - INFO - Starting Model Building (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\08_model_building\model_building.py)
+2025-08-24 12:01:09 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:01:26 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\08_model_building\model_building.py completed successfully.
+2025-08-24 12:01:26 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts\08_model_building\model_building.py completed successfully.
+2025-08-24 12:01:26 - INFO - Finished in state Completed()
+2025-08-24 12:01:26 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/flow_runs/3db772fb-7b41-4aa9-b933-eb9b955af159/set_state "HTTP/1.1 201 Created"
+2025-08-24 12:01:26 - INFO - Finished in state Completed()
+2025-08-24 12:01:26 - INFO - HTTP Request: POST http://127.0.0.1:8943/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 12:01:26 - INFO - Stopping temporary server on http://127.0.0.1:8943
