@@ -58,11 +58,11 @@ if not os.path.exists(latest_data_path):
 df = pd.read_csv(latest_data_path)
 
 # === Drop leakage columns ===
-leakage_cols = [
-    'Customer Status', 'CLTV', 'Total Revenue', 'Total Charges',
-    'Churn Category', 'Churn Reason', 'Churn Score', 'Lat Long', 'Customer ID'
-]
-df.drop(columns=leakage_cols, inplace=True, errors='ignore')
+# leakage_cols = [
+#     'Customer Status', 'CLTV', 'Total Revenue', 'Total Charges',
+#     'Churn Category', 'Churn Reason', 'Churn Score', 'Lat Long', 'Customer ID'
+# ]
+# df.drop(columns=leakage_cols, inplace=True, errors='ignore')
 
 # === Define features and target ===
 target = 'Churn'
@@ -143,7 +143,7 @@ for model_name, model in models.items():
             signature=model_signature
         )
 
-        model_path = f"{model_name.lower()}_churn_model.pkl"
-        joblib.dump(pipeline, model_path)
-        logging.info(f"{model_name} model saved to {model_path}")
+        # model_path = f"{model_name.lower()}_churn_model.pkl"
+        # joblib.dump(pipeline, model_path)
+        # logging.info(f"{model_name} model saved to {model_path}")
 

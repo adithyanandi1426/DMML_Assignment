@@ -38,18 +38,6 @@ logging.info("Starting data transformation...")
 
 try:
     df = pd.read_csv(latest_data_path)
-
-    # # Normalize/Standardize numeric columns
-    # num_cols = df.select_dtypes(include=["float64", "int64"]).columns.tolist()
-    # scaler = StandardScaler()
-    # df[num_cols] = scaler.fit_transform(df[num_cols])
-
-    # # Encode categorical features
-    # cat_cols = df.select_dtypes(include=["object"]).columns
-    # df[cat_cols] = df[cat_cols].fillna("Missing")
-
-    # df = pd.get_dummies(df, columns=cat_cols, drop_first=True)
-
     
     # Drop leakage columns (future info)
     leakage_cols = [

@@ -125,3 +125,81 @@
 2025-08-23 13:34:09,286 - INFO - Connected to Snowflake
 2025-08-23 13:34:12,689 - INFO - Uploaded 4225 rows to 'customer_churn_transformed' in Snowflake.
 2025-08-23 13:34:12,780 - INFO - Closed Snowflake connection.
+2025-08-24 09:42:23,683 - INFO - Starting data transformation...
+2025-08-24 09:42:23,757 - INFO - Data transformed. New shape: (4225, 43)
+2025-08-24 09:42:23,816 - INFO - Transformed data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\transformed\2025-08-24\customer_churn_transformed.csv
+2025-08-24 09:42:23,816 - INFO - Transformation complete and saved.
+2025-08-24 09:42:23,817 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 09:42:23,817 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 09:42:24,239 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000026D6DD368B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 09:42:24,239 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000026D6DD2F390>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 09:42:24,438 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000026D6DDF0830>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 09:42:24,440 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000026D6DD2EFD0>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 09:42:27,453 - INFO - Connected to Snowflake
+2025-08-24 09:42:30,146 - INFO - Uploaded 4225 rows to 'customer_churn_transformed' in Snowflake.
+2025-08-24 09:42:30,278 - INFO - Closed Snowflake connection.
+2025-08-24 10:11:31,845 - INFO - Starting data transformation...
+2025-08-24 10:11:31,896 - INFO - Data transformed. New shape: (4225, 43)
+2025-08-24 10:11:31,958 - INFO - Transformed data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\transformed\2025-08-24\customer_churn_transformed.csv
+2025-08-24 10:11:31,958 - INFO - Transformation complete and saved.
+2025-08-24 10:11:31,959 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 10:11:31,959 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 10:11:32,388 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x00000235C8557ED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 10:11:32,388 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x00000235C854A8B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 10:11:32,571 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x00000235C8557B10>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 10:11:32,572 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x00000235C8608830>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 10:11:35,577 - INFO - Connected to Snowflake
+2025-08-24 10:11:39,169 - INFO - Uploaded 4225 rows to 'customer_churn_transformed' in Snowflake.
+2025-08-24 10:11:39,268 - INFO - Closed Snowflake connection.
+2025-08-24 10:21:34,234 - INFO - Starting data transformation...
+2025-08-24 10:21:34,259 - INFO - Data transformed. New shape: (4225, 43)
+2025-08-24 10:21:34,288 - INFO - Transformed data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\transformed\2025-08-24\customer_churn_transformed.csv
+2025-08-24 10:21:34,288 - INFO - Transformation complete and saved.
+2025-08-24 10:21:34,288 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 10:21:34,289 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 10:21:34,594 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001CBBE84FED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 10:21:34,595 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001CBBE908830>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 10:21:34,777 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001CBBE84FB10>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 10:21:34,778 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001CBBE8528B0>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 10:21:37,878 - INFO - Connected to Snowflake
+2025-08-24 10:21:41,644 - INFO - Uploaded 4225 rows to 'customer_churn_transformed' in Snowflake.
+2025-08-24 10:21:41,820 - INFO - Closed Snowflake connection.
+2025-08-24 10:31:14,885 - INFO - Starting data transformation...
+2025-08-24 10:31:14,905 - INFO - Data transformed. New shape: (4225, 43)
+2025-08-24 10:31:14,928 - INFO - Transformed data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\transformed\2025-08-24\customer_churn_transformed.csv
+2025-08-24 10:31:14,928 - INFO - Transformation complete and saved.
+2025-08-24 10:31:14,928 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 10:31:14,929 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 10:31:15,101 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001684362FED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 10:31:15,103 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x00000168436328B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 10:31:15,287 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001684362FB10>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 10:31:15,288 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x00000168436E8830>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 10:31:17,748 - INFO - Connected to Snowflake
+2025-08-24 10:31:20,962 - INFO - Uploaded 4225 rows to 'customer_churn_transformed' in Snowflake.
+2025-08-24 10:31:21,076 - INFO - Closed Snowflake connection.
+2025-08-24 10:36:18,094 - INFO - Starting data transformation...
+2025-08-24 10:36:18,114 - INFO - Data transformed. New shape: (4000, 43)
+2025-08-24 10:36:18,137 - INFO - Transformed data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\transformed\2025-08-24\customer_churn_transformed.csv
+2025-08-24 10:36:18,137 - INFO - Transformation complete and saved.
+2025-08-24 10:36:18,138 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 10:36:18,138 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 10:36:18,302 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001D4DB427ED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 10:36:18,302 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001D4DB4228B0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 10:36:18,505 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001D4DB4E8830>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 10:36:18,506 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x000001D4DB427B10>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 10:36:20,902 - INFO - Connected to Snowflake
+2025-08-24 10:36:23,601 - INFO - Uploaded 4000 rows to 'customer_churn_transformed' in Snowflake.
+2025-08-24 10:36:23,688 - INFO - Closed Snowflake connection.
+2025-08-24 10:48:51,844 - INFO - Starting data transformation...
+2025-08-24 10:48:51,864 - INFO - Data transformed. New shape: (4225, 43)
+2025-08-24 10:48:51,889 - INFO - Transformed data saved to: C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\transformed\2025-08-24\customer_churn_transformed.csv
+2025-08-24 10:48:51,889 - INFO - Transformation complete and saved.
+2025-08-24 10:48:51,889 - INFO - Snowflake Connector for Python Version: 3.17.1, Python Version: 3.13.7, Platform: Windows-11-10.0.26100-SP0
+2025-08-24 10:48:51,890 - INFO - Connecting to GLOBAL Snowflake domain
+2025-08-24 10:48:52,062 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000016DBE94BED0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /computeMetadata/v1/instance/service-accounts/default/email
+2025-08-24 10:48:52,062 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000016DBE94BB10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /
+2025-08-24 10:48:52,255 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000016DBEA08830>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/instance?api-version=2021-02-01
+2025-08-24 10:48:52,256 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectTimeoutError(<snowflake.connector.vendored.urllib3.connection.HTTPConnection object at 0x0000016DBE94E8B0>, 'Connection to 169.254.169.254 timed out. (connect timeout=0.2)')': /metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com
+2025-08-24 10:48:54,527 - INFO - Connected to Snowflake
+2025-08-24 10:48:56,858 - INFO - Uploaded 4225 rows to 'customer_churn_transformed' in Snowflake.
+2025-08-24 10:48:56,936 - INFO - Closed Snowflake connection.

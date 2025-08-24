@@ -1,0 +1,44 @@
+feature_name,data_type,num_unique_values,num_missing_values,percentage_missing,description,version_info
+Age,int64,62,0,0.0,The customer's age in years.,2025-08-24
+Avg Monthly GB Download,int64,50,0,0.0,Average monthly data download in GB.,2025-08-24
+Avg Monthly Long Distance Charges,float64,2666,0,0.0,Average monthly long distance call charges.,2025-08-24
+Churn,int64,2,0,0.0,"1 if the customer churned, 0 otherwise.",2025-08-24
+City,object,1085,0,0.0,Customer's city of residence.,2025-08-24
+Contract,object,3,0,0.0,"Contract type (Month-to-Month, One year, Two year).",2025-08-24
+Country,object,1,0,0.0,Country where the customer resides.,2025-08-24
+Dependents,int64,2,0,0.0,"1 if the customer has dependents, 0 otherwise.",2025-08-24
+Device Protection Plan,int64,2,0,0.0,1 if the customer has a device protection plan.,2025-08-24
+Gender,object,2,0,0.0,The customer's gender.,2025-08-24
+Internet Service,int64,2,0,0.0,"1 if the customer has internet service, 0 otherwise.",2025-08-24
+Internet Type,object,3,886,20.97041420118343,"Type of internet connection (e.g., DSL, Fiber, Cable).",2025-08-24
+Latitude,float64,1594,0,0.0,Geographical latitude of the customer.,2025-08-24
+Longitude,float64,1593,0,0.0,Geographical longitude of the customer.,2025-08-24
+Married,int64,2,0,0.0,"1 if married, 0 otherwise.",2025-08-24
+Monthly Charge,float64,1387,0,0.0,Monthly bill for the customer.,2025-08-24
+Multiple Lines,int64,2,0,0.0,1 if the customer has multiple phone lines.,2025-08-24
+Number of Dependents,int64,8,0,0.0,Total number of dependents for the customer.,2025-08-24
+Number of Referrals,int64,12,0,0.0,Number of people the customer referred.,2025-08-24
+Offer,object,5,2324,55.00591715976332,Last marketing offer accepted by the customer.,2025-08-24
+Online Backup,int64,2,0,0.0,1 if the customer has online backup service.,2025-08-24
+Online Security,int64,2,0,0.0,1 if the customer has online security service.,2025-08-24
+Paperless Billing,int64,2,0,0.0,1 if the customer uses paperless billing.,2025-08-24
+Partner,int64,2,0,0.0,1 if the customer has a partner.,2025-08-24
+Payment Method,object,3,0,0.0,Customer’s chosen method of payment.,2025-08-24
+Phone Service,int64,2,0,0.0,1 if the customer has phone service.,2025-08-24
+Population,int64,1539,0,0.0,Estimated population in the customer's ZIP code.,2025-08-24
+Premium Tech Support,int64,2,0,0.0,1 if the customer has premium tech support.,2025-08-24
+Quarter,object,1,0,0.0,"Fiscal quarter (e.g., Q1, Q2, etc.).",2025-08-24
+Referred a Friend,int64,2,0,0.0,1 if the customer referred a friend.,2025-08-24
+Satisfaction Score,int64,5,0,0.0,Customer satisfaction rating from 1 to 5.,2025-08-24
+Senior Citizen,int64,2,0,0.0,1 if customer is aged 65 or older.,2025-08-24
+State,object,1,0,0.0,State where the customer lives.,2025-08-24
+Streaming Movies,int64,2,0,0.0,1 if the customer subscribes to movie streaming.,2025-08-24
+Streaming Music,int64,2,0,0.0,1 if the customer subscribes to music streaming.,2025-08-24
+Streaming TV,int64,2,0,0.0,1 if the customer subscribes to TV streaming.,2025-08-24
+Tenure in Months,int64,72,0,0.0,Number of months the customer has stayed.,2025-08-24
+Total Extra Data Charges,int64,16,0,0.0,Total charges incurred for extra data.,2025-08-24
+Total Long Distance Charges,float64,3705,0,0.0,Total long distance call charges.,2025-08-24
+Total Refunds,float64,312,0,0.0,Total amount refunded to the customer.,2025-08-24
+Under 30,int64,2,0,0.0,1 if the customer is under 30 years old.,2025-08-24
+Unlimited Data,int64,2,0,0.0,1 if the customer has unlimited data plan.,2025-08-24
+Zip Code,int64,1594,0,0.0,ZIP code of the customer’s residence.,2025-08-24

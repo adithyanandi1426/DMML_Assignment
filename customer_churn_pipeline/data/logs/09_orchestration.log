@@ -1,0 +1,609 @@
+2025-08-24 10:19:51 - INFO - Orchestration script started.
+2025-08-24 10:19:53 - INFO - Starting temporary server on http://127.0.0.1:8626
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:19:58 - INFO - HTTP Request: GET http://127.0.0.1:8626/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:19:59 - INFO - HTTP Request: GET http://127.0.0.1:8626/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:19:59 - INFO - HTTP Request: GET http://127.0.0.1:8626/api/csrf-token?client=312eb7a3-f41b-4e74-a4e8-19b6658e2c75 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:19:59 - INFO - HTTP Request: POST http://127.0.0.1:8626/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:19:59 - INFO - HTTP Request: POST http://127.0.0.1:8626/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:19:59 - INFO - HTTP Request: POST http://127.0.0.1:8626/api/flow_runs/0f0fe2a2-5596-42ab-a476-147074086f65/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:19:59 - INFO - HTTP Request: GET http://127.0.0.1:8626/api/flow_runs/0f0fe2a2-5596-42ab-a476-147074086f65 "HTTP/1.1 200 OK"
+2025-08-24 10:19:59 - INFO - Finished in state Running()
+2025-08-24 10:19:59 - INFO - HTTP Request: GET http://127.0.0.1:8626/api/csrf-token?client=729b53e9-a21a-47c3-8f25-7ad2a0d5bdbb "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:19:59 - INFO - HTTP Request: POST http://127.0.0.1:8626/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:19:59 - INFO - Stopping temporary server on http://127.0.0.1:8626
+2025-08-24 10:20:40 - INFO - Orchestration script started.
+2025-08-24 10:20:42 - INFO - Starting temporary server on http://127.0.0.1:8053
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:20:47 - INFO - HTTP Request: GET http://127.0.0.1:8053/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:20:48 - INFO - HTTP Request: GET http://127.0.0.1:8053/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:20:48 - INFO - HTTP Request: GET http://127.0.0.1:8053/api/csrf-token?client=99a5f1aa-b468-4a69-b87d-c862069d772d "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:20:48 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:20:48 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:20:48 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/flow_runs/94195fb3-e88d-4e59-a8df-934d2d994419/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:20:48 - INFO - HTTP Request: GET http://127.0.0.1:8053/api/flow_runs/94195fb3-e88d-4e59-a8df-934d2d994419 "HTTP/1.1 200 OK"
+2025-08-24 10:20:48 - INFO - HTTP Request: PATCH http://127.0.0.1:8053/api/flow_runs/94195fb3-e88d-4e59-a8df-934d2d994419 "HTTP/1.1 204 No Content"
+2025-08-24 10:20:48 - INFO - Beginning flow run "churn-pipeline-<class 'datetime.datetime'>" for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 10:20:48 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:20:48 - INFO - HTTP Request: GET http://127.0.0.1:8053/api/flows/358a1e52-cc1e-4411-9c6d-567ba31dc3ef "HTTP/1.1 200 OK"
+2025-08-24 10:20:50 - INFO - HTTP Request: GET http://127.0.0.1:8053/api/csrf-token?client=91ad2ff2-f1ec-4899-bb38-2a81c4466cad "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:20:50 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:12 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py completed successfully.
+2025-08-24 10:21:12 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py completed successfully.
+2025-08-24 10:21:12 - INFO - Finished in state Completed()
+2025-08-24 10:21:13 - INFO - Starting Data Ingestion (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py)
+2025-08-24 10:21:14 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:21 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py completed successfully.
+2025-08-24 10:21:21 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py completed successfully.
+2025-08-24 10:21:21 - INFO - Finished in state Completed()
+2025-08-24 10:21:22 - INFO - Starting Raw Data Storage (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py)
+2025-08-24 10:21:22 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:28 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py completed successfully.
+2025-08-24 10:21:28 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py completed successfully.
+2025-08-24 10:21:28 - INFO - Finished in state Completed()
+2025-08-24 10:21:28 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:29 - INFO - Starting Data Validation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py)
+2025-08-24 10:21:30 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py completed successfully.
+2025-08-24 10:21:30 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py completed successfully.
+2025-08-24 10:21:30 - INFO - Finished in state Completed()
+2025-08-24 10:21:30 - INFO - Starting Data Preparation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py)
+2025-08-24 10:21:30 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:31 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py completed successfully.
+2025-08-24 10:21:31 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py completed successfully.
+2025-08-24 10:21:31 - INFO - Finished in state Completed()
+2025-08-24 10:21:32 - INFO - Starting Data Transformation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py)
+2025-08-24 10:21:32 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:42 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py completed successfully.
+2025-08-24 10:21:42 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py completed successfully.
+2025-08-24 10:21:42 - INFO - Finished in state Completed()
+2025-08-24 10:21:42 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:21:42 - INFO - Starting Feature Store (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py)
+2025-08-24 10:21:43 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py completed successfully.
+2025-08-24 10:21:43 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py completed successfully.
+2025-08-24 10:21:43 - INFO - Finished in state Completed()
+2025-08-24 10:21:44 - INFO - Starting Model Building (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py)
+2025-08-24 10:21:44 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:22:03 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py completed successfully.
+2025-08-24 10:22:03 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py completed successfully.
+2025-08-24 10:22:03 - INFO - Finished in state Completed()
+2025-08-24 10:22:03 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/flow_runs/94195fb3-e88d-4e59-a8df-934d2d994419/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:22:03 - INFO - Finished in state Completed()
+2025-08-24 10:22:03 - INFO - HTTP Request: POST http://127.0.0.1:8053/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:22:03 - INFO - Stopping temporary server on http://127.0.0.1:8053
+2025-08-24 10:28:55 - INFO - Started Prefect orchestration for customer churn pipeline
+2025-08-24 10:28:56 - INFO - Starting temporary server on http://127.0.0.1:8009
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:28:59 - INFO - HTTP Request: GET http://127.0.0.1:8009/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:28:59 - INFO - HTTP Request: GET http://127.0.0.1:8009/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:28:59 - INFO - HTTP Request: GET http://127.0.0.1:8009/api/csrf-token?client=333b421a-109c-46b4-914d-fc79da54cf70 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:28:59 - INFO - HTTP Request: POST http://127.0.0.1:8009/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:28:59 - INFO - HTTP Request: POST http://127.0.0.1:8009/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:28:59 - INFO - HTTP Request: POST http://127.0.0.1:8009/api/flow_runs/2452823a-fd58-445e-a60c-afdd4a424a4e/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:28:59 - INFO - HTTP Request: GET http://127.0.0.1:8009/api/flow_runs/2452823a-fd58-445e-a60c-afdd4a424a4e "HTTP/1.1 200 OK"
+2025-08-24 10:28:59 - INFO - Finished in state Running()
+2025-08-24 10:28:59 - INFO - HTTP Request: GET http://127.0.0.1:8009/api/csrf-token?client=1c41ff6f-4e17-4dc1-9843-d49d73b5435d "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:28:59 - INFO - HTTP Request: POST http://127.0.0.1:8009/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:28:59 - INFO - Stopping temporary server on http://127.0.0.1:8009
+2025-08-24 10:30:26 - INFO - Started Prefect orchestration for customer churn pipeline
+2025-08-24 10:30:27 - INFO - Starting temporary server on http://127.0.0.1:8707
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:30:30 - INFO - HTTP Request: GET http://127.0.0.1:8707/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:30:30 - INFO - HTTP Request: GET http://127.0.0.1:8707/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:30:30 - INFO - HTTP Request: GET http://127.0.0.1:8707/api/csrf-token?client=d65bcac6-3f84-4171-bb2c-a83d6d462fba "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:30:30 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:30:30 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:30:30 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/flow_runs/9f4a45f3-a471-4f97-987a-08bd16b9169f/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:30:30 - INFO - HTTP Request: GET http://127.0.0.1:8707/api/flow_runs/9f4a45f3-a471-4f97-987a-08bd16b9169f "HTTP/1.1 200 OK"
+2025-08-24 10:30:30 - INFO - HTTP Request: PATCH http://127.0.0.1:8707/api/flow_runs/9f4a45f3-a471-4f97-987a-08bd16b9169f "HTTP/1.1 204 No Content"
+2025-08-24 10:30:30 - INFO - Beginning flow run 'churn-pipeline-%Y%m%dT%H%M%S' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 10:30:30 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:30:30 - INFO - HTTP Request: GET http://127.0.0.1:8707/api/flows/358a1e52-cc1e-4411-9c6d-567ba31dc3ef "HTTP/1.1 200 OK"
+2025-08-24 10:30:32 - INFO - HTTP Request: GET http://127.0.0.1:8707/api/csrf-token?client=ad56b6f6-eefa-4ffa-9c38-0f397811ad08 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:30:32 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:00 - INFO - Data Fetching completed successfully.
+2025-08-24 10:31:00 - INFO - Data Fetching completed successfully.
+2025-08-24 10:31:00 - INFO - Finished in state Completed()
+2025-08-24 10:31:00 - INFO - Starting Data Ingestion (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py)
+2025-08-24 10:31:00 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:07 - INFO - Data Ingestion completed successfully.
+2025-08-24 10:31:07 - INFO - Data Ingestion completed successfully.
+2025-08-24 10:31:07 - INFO - Finished in state Completed()
+2025-08-24 10:31:07 - INFO - Starting Raw Data Storage (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py)
+2025-08-24 10:31:08 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:12 - INFO - Raw Data Storage completed successfully.
+2025-08-24 10:31:12 - INFO - Raw Data Storage completed successfully.
+2025-08-24 10:31:12 - INFO - Finished in state Completed()
+2025-08-24 10:31:12 - INFO - Starting Data Validation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py)
+2025-08-24 10:31:12 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:12 - INFO - Data Validation completed successfully.
+2025-08-24 10:31:12 - INFO - Data Validation completed successfully.
+2025-08-24 10:31:12 - INFO - Finished in state Completed()
+2025-08-24 10:31:13 - INFO - Starting Data Preparation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py)
+2025-08-24 10:31:13 - INFO - Data Preparation completed successfully.
+2025-08-24 10:31:13 - INFO - Data Preparation completed successfully.
+2025-08-24 10:31:13 - INFO - Finished in state Completed()
+2025-08-24 10:31:13 - INFO - Starting Data Transformation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py)
+2025-08-24 10:31:14 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:21 - INFO - Data Transformation completed successfully.
+2025-08-24 10:31:21 - INFO - Data Transformation completed successfully.
+2025-08-24 10:31:21 - INFO - Finished in state Completed()
+2025-08-24 10:31:21 - INFO - Starting Feature Store (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py)
+2025-08-24 10:31:21 - INFO - Feature Store completed successfully.
+2025-08-24 10:31:21 - INFO - Feature Store completed successfully.
+2025-08-24 10:31:21 - INFO - Finished in state Completed()
+2025-08-24 10:31:22 - INFO - Starting Model Building (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py)
+2025-08-24 10:31:22 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:33 - INFO - Model Building completed successfully.
+2025-08-24 10:31:33 - INFO - Model Building completed successfully.
+2025-08-24 10:31:33 - INFO - Finished in state Completed()
+2025-08-24 10:31:33 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/flow_runs/9f4a45f3-a471-4f97-987a-08bd16b9169f/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:31:33 - INFO - Finished in state Completed()
+2025-08-24 10:31:33 - INFO - HTTP Request: POST http://127.0.0.1:8707/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:31:33 - INFO - Stopping temporary server on http://127.0.0.1:8707
+2025-08-24 10:35:23 - INFO - Started Prefect orchestration for customer churn pipeline
+2025-08-24 10:35:24 - INFO - Starting temporary server on http://127.0.0.1:8226
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:35:27 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:35:27 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:35:27 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=c670da29-693d-4b5b-9eec-594c69410660 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/9ca1bfb6-9381-471d-9721-37f6aac49910/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:35:27 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/9ca1bfb6-9381-471d-9721-37f6aac49910 "HTTP/1.1 200 OK"
+2025-08-24 10:35:27 - INFO - Beginning flow run 'violet-basilisk' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 10:35:27 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=5f267cd1-449a-4e5c-bfd5-260af4015508 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:35:27 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/041c6651-2fca-4025-8fe7-ce4e755e7a51/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:35:27 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/041c6651-2fca-4025-8fe7-ce4e755e7a51 "HTTP/1.1 200 OK"
+2025-08-24 10:35:27 - INFO - Beginning subflow run 'solemn-toucanet' for flow 'Data Fetching'
+2025-08-24 10:35:27 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:35:29 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=c191695a-9845-42f4-a294-5d97afd19788 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:35:29 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:02 - INFO - Data Fetching completed successfully.
+2025-08-24 10:36:02 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/041c6651-2fca-4025-8fe7-ce4e755e7a51/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:02 - INFO - Finished in state Completed()
+2025-08-24 10:36:03 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=cb65b2e8-294b-4ebd-abd7-d9623c50fb08 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:03 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:03 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:03 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:03 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/34601793-25b1-4602-ad28-6190fa76674a/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:03 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/34601793-25b1-4602-ad28-6190fa76674a "HTTP/1.1 200 OK"
+2025-08-24 10:36:03 - INFO - Beginning subflow run 'bipedal-ammonite' for flow 'Data Ingestion'
+2025-08-24 10:36:03 - INFO - Starting Data Ingestion (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py)
+2025-08-24 10:36:03 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:09 - INFO - Data Ingestion completed successfully.
+2025-08-24 10:36:09 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/34601793-25b1-4602-ad28-6190fa76674a/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:09 - INFO - Finished in state Completed()
+2025-08-24 10:36:09 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:10 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=b23ecde5-f978-4abb-8275-c35b9200695f "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:10 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:10 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:10 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:10 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/e824da32-f7a9-4ba3-93a5-e46c2f432ce0/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:10 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/e824da32-f7a9-4ba3-93a5-e46c2f432ce0 "HTTP/1.1 200 OK"
+2025-08-24 10:36:10 - INFO - Beginning subflow run 'provocative-catfish' for flow 'Raw Data Storage'
+2025-08-24 10:36:10 - INFO - Starting Raw Data Storage (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py)
+2025-08-24 10:36:11 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:14 - INFO - Raw Data Storage completed successfully.
+2025-08-24 10:36:14 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/e824da32-f7a9-4ba3-93a5-e46c2f432ce0/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:14 - INFO - Finished in state Completed()
+2025-08-24 10:36:14 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=06c21681-9090-442d-ae00-b8fe9834540c "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:14 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:14 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:14 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:14 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/eda337e1-cb64-4dea-9f05-f8ad5ee05d45/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:14 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/eda337e1-cb64-4dea-9f05-f8ad5ee05d45 "HTTP/1.1 200 OK"
+2025-08-24 10:36:14 - INFO - Beginning subflow run 'cherubic-dolphin' for flow 'Data Validation'
+2025-08-24 10:36:14 - INFO - Starting Data Validation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py)
+2025-08-24 10:36:15 - INFO - Data Validation completed successfully.
+2025-08-24 10:36:15 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/eda337e1-cb64-4dea-9f05-f8ad5ee05d45/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:15 - INFO - Finished in state Completed()
+2025-08-24 10:36:15 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=4929d685-145a-4f56-9d23-66e80dde734c "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:15 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:15 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:15 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:15 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/50e26cac-571b-40a2-9db6-b4a9b3d009f4/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:15 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/50e26cac-571b-40a2-9db6-b4a9b3d009f4 "HTTP/1.1 200 OK"
+2025-08-24 10:36:15 - INFO - Beginning subflow run 'slim-monkey' for flow 'Data Preparation'
+2025-08-24 10:36:15 - INFO - Starting Data Preparation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py)
+2025-08-24 10:36:15 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:16 - INFO - Data Preparation completed successfully.
+2025-08-24 10:36:16 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/50e26cac-571b-40a2-9db6-b4a9b3d009f4/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:16 - INFO - Finished in state Completed()
+2025-08-24 10:36:16 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=936ff118-c42f-4188-96ce-b1cd0b5f4d5f "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:16 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:16 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:16 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:17 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/514dac31-f058-4140-9144-303ad817797b/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:17 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/514dac31-f058-4140-9144-303ad817797b "HTTP/1.1 200 OK"
+2025-08-24 10:36:17 - INFO - Beginning subflow run 'delicate-stingray' for flow 'Data Transformation'
+2025-08-24 10:36:17 - INFO - Starting Data Transformation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py)
+2025-08-24 10:36:18 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:23 - INFO - Data Transformation completed successfully.
+2025-08-24 10:36:23 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/514dac31-f058-4140-9144-303ad817797b/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:23 - INFO - Finished in state Completed()
+2025-08-24 10:36:24 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:24 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=40993487-b915-4296-b4ea-ef0f478325be "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:24 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:24 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:24 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:24 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/86f30802-6aed-44c2-abf0-de5dc04267a2/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:24 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/86f30802-6aed-44c2-abf0-de5dc04267a2 "HTTP/1.1 200 OK"
+2025-08-24 10:36:24 - INFO - Beginning subflow run 'light-trout' for flow 'Feature Store'
+2025-08-24 10:36:24 - INFO - Starting Feature Store (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py)
+2025-08-24 10:36:24 - INFO - Feature Store completed successfully.
+2025-08-24 10:36:24 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/86f30802-6aed-44c2-abf0-de5dc04267a2/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:24 - INFO - Finished in state Completed()
+2025-08-24 10:36:25 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/csrf-token?client=a762252f-447a-41af-80ba-4e342260ebe3 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:36:25 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/task_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:25 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flows/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:25 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:25 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/5f6c1f82-fd4d-4817-b1a5-fded3c6015ce/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:25 - INFO - HTTP Request: GET http://127.0.0.1:8226/api/flow_runs/5f6c1f82-fd4d-4817-b1a5-fded3c6015ce "HTTP/1.1 200 OK"
+2025-08-24 10:36:25 - INFO - Beginning subflow run 'provocative-caiman' for flow 'Model Building'
+2025-08-24 10:36:25 - INFO - Starting Model Building (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py)
+2025-08-24 10:36:26 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:36 - INFO - Model Building completed successfully.
+2025-08-24 10:36:36 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/5f6c1f82-fd4d-4817-b1a5-fded3c6015ce/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:36 - INFO - Finished in state Completed()
+2025-08-24 10:36:36 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/flow_runs/9ca1bfb6-9381-471d-9721-37f6aac49910/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:36:36 - INFO - Finished in state Completed()
+2025-08-24 10:36:36 - INFO - HTTP Request: POST http://127.0.0.1:8226/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:36:36 - INFO - Stopping temporary server on http://127.0.0.1:8226
+2025-08-24 10:44:31 - INFO - Orchestration script started.
+2025-08-24 10:44:32 - INFO - Starting temporary server on http://127.0.0.1:8938
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:44:35 - INFO - HTTP Request: GET http://127.0.0.1:8938/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:44:35 - INFO - HTTP Request: GET http://127.0.0.1:8938/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:44:35 - INFO - HTTP Request: GET http://127.0.0.1:8938/api/csrf-token?client=398a823f-2637-44a0-8eb2-ef71543ea8ce "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:44:35 - INFO - HTTP Request: POST http://127.0.0.1:8938/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:44:35 - INFO - HTTP Request: POST http://127.0.0.1:8938/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:44:35 - INFO - HTTP Request: POST http://127.0.0.1:8938/api/flow_runs/7eefd5c1-63d4-4953-8763-06b7c31b6264/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:44:35 - INFO - HTTP Request: GET http://127.0.0.1:8938/api/flow_runs/7eefd5c1-63d4-4953-8763-06b7c31b6264 "HTTP/1.1 200 OK"
+2025-08-24 10:44:35 - INFO - Beginning flow run 'noisy-ferret' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 10:44:35 - ERROR - Encountered exception during execution: TypeError('expected str, bytes or os.PathLike object, not NoneType')
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 782, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 1397, in run_flow_sync
+    engine.call_flow_fn()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 802, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 61, in churn_pipeline_flow
+    ("Data Fetching", os.path.join(base_path, "01_data_fetching", "data_fetch.py")),
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen ntpath>", line 100, in join
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:44:35 - INFO - HTTP Request: POST http://127.0.0.1:8938/api/flow_runs/7eefd5c1-63d4-4953-8763-06b7c31b6264/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:44:35 - INFO - Finished in state Failed('Flow run encountered an exception: TypeError: expected str, bytes or os.PathLike object, not NoneType')
+2025-08-24 10:44:35 - INFO - HTTP Request: GET http://127.0.0.1:8938/api/csrf-token?client=6151748b-cdb6-4f7c-b373-116e1b77b117 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:44:35 - INFO - HTTP Request: POST http://127.0.0.1:8938/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:44:35 - INFO - Stopping temporary server on http://127.0.0.1:8938
+2025-08-24 10:45:18 - INFO - Orchestration script started.
+2025-08-24 10:45:18 - INFO - Starting temporary server on http://127.0.0.1:8089
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:45:21 - INFO - HTTP Request: GET http://127.0.0.1:8089/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:45:21 - INFO - HTTP Request: GET http://127.0.0.1:8089/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:45:21 - INFO - HTTP Request: GET http://127.0.0.1:8089/api/csrf-token?client=3879e2b4-6b6e-4aa1-aa4f-8e50ca982a63 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:45:21 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:45:21 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:45:21 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/flow_runs/d7b0b54a-ccc4-4621-88c3-a4a768460845/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:45:21 - INFO - HTTP Request: GET http://127.0.0.1:8089/api/flow_runs/d7b0b54a-ccc4-4621-88c3-a4a768460845 "HTTP/1.1 200 OK"
+2025-08-24 10:45:21 - INFO - Beginning flow run 'crafty-buffalo' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 10:45:22 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:45:22 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:45:22 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:45:22 - INFO - Task run failed with exception: TypeError('expected str, bytes or os.PathLike object, not NoneType') - Retry 1/2 will start 30 second(s) from now
+2025-08-24 10:45:22 - INFO - HTTP Request: GET http://127.0.0.1:8089/api/flows/358a1e52-cc1e-4411-9c6d-567ba31dc3ef "HTTP/1.1 200 OK"
+2025-08-24 10:45:24 - INFO - HTTP Request: GET http://127.0.0.1:8089/api/csrf-token?client=8e6a9628-3458-4064-b69c-6741f07fec24 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:45:24 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:45:52 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:45:52 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:45:52 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:45:52 - INFO - Task run failed with exception: TypeError('expected str, bytes or os.PathLike object, not NoneType') - Retry 2/2 will start 30 second(s) from now
+2025-08-24 10:45:52 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:46:22 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:46:22 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:46:22 - ERROR - Error running C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py: expected str, bytes or os.PathLike object, not NoneType
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:46:22 - ERROR - Task run failed with exception: TypeError('expected str, bytes or os.PathLike object, not NoneType') - Retries are exhausted
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 857, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1487, in run_task_sync
+    engine.call_task_fn(txn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 874, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:46:22 - ERROR - Finished in state Failed('Task run encountered an exception TypeError: expected str, bytes or os.PathLike object, not NoneType')
+2025-08-24 10:46:22 - ERROR - Encountered exception during execution: TypeError('expected str, bytes or os.PathLike object, not NoneType')
+Traceback (most recent call last):
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 782, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 1397, in run_flow_sync
+    engine.call_flow_fn()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\flow_engine.py", line 802, in call_flow_fn
+    result = call_with_parameters(self.flow.fn, self.parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 72, in churn_pipeline_flow
+    run_script.with_options(name=script_name)(script_path, script_name=script_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\tasks.py", line 1139, in __call__
+    return run_task(
+        task=self,
+    ...<2 lines>...
+        return_type=return_type,
+    )
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1714, in run_task
+    return run_task_sync(**kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1489, in run_task_sync
+    return engine.state if return_type == "state" else engine.result()
+                                                       ~~~~~~~~~~~~~^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 478, in result
+    raise self._raised
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 857, in run_context
+    yield self
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 1487, in run_task_sync
+    engine.call_task_fn(txn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\task_engine.py", line 874, in call_task_fn
+    result = call_with_parameters(self.task.fn, parameters)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Lib\site-packages\prefect\utilities\callables.py", line 210, in call_with_parameters
+    return fn(*args, **kwargs)
+  File "C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\09_orchestrate\orchestrate.py", line 38, in run_script
+    result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
+    errors="replace")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 554, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1478, in _execute_child
+    args = list2cmdline(args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.2032.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 614, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+               ~~~^^^^^^^^^^^^^^^^^^
+  File "<frozen os>", line 862, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+2025-08-24 10:46:22 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/flow_runs/d7b0b54a-ccc4-4621-88c3-a4a768460845/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:46:22 - INFO - Finished in state Failed('Flow run encountered an exception: TypeError: expected str, bytes or os.PathLike object, not NoneType')
+2025-08-24 10:46:22 - INFO - HTTP Request: POST http://127.0.0.1:8089/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:46:22 - INFO - Stopping temporary server on http://127.0.0.1:8089
+2025-08-24 10:48:06 - INFO - Orchestration script started.
+2025-08-24 10:48:07 - INFO - Starting temporary server on http://127.0.0.1:8223
+See https://docs.prefect.io/v3/concepts/server#how-to-guides for more information on running a dedicated Prefect server.
+2025-08-24 10:48:10 - INFO - HTTP Request: GET http://127.0.0.1:8223/api/health "HTTP/1.1 200 OK"
+2025-08-24 10:48:10 - INFO - HTTP Request: GET http://127.0.0.1:8223/api/admin/version "HTTP/1.1 200 OK"
+2025-08-24 10:48:10 - INFO - HTTP Request: GET http://127.0.0.1:8223/api/csrf-token?client=926d3599-1254-44d8-a5ec-aa5949438e1f "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:48:10 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/flows/ "HTTP/1.1 200 OK"
+2025-08-24 10:48:10 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/flow_runs/ "HTTP/1.1 201 Created"
+2025-08-24 10:48:10 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/flow_runs/a5e1dbe9-405d-438f-a4b8-4c413441fa8c/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:48:10 - INFO - HTTP Request: GET http://127.0.0.1:8223/api/flow_runs/a5e1dbe9-405d-438f-a4b8-4c413441fa8c "HTTP/1.1 200 OK"
+2025-08-24 10:48:10 - INFO - Beginning flow run 'sassy-cuttlefish' for flow 'Churn_Pipeline_Orchestration'
+2025-08-24 10:48:10 - INFO - Starting Data Fetching (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py)
+2025-08-24 10:48:11 - INFO - HTTP Request: GET http://127.0.0.1:8223/api/flows/358a1e52-cc1e-4411-9c6d-567ba31dc3ef "HTTP/1.1 200 OK"
+2025-08-24 10:48:12 - INFO - HTTP Request: GET http://127.0.0.1:8223/api/csrf-token?client=43ecde94-e272-401a-a977-34ce8846bfb9 "HTTP/1.1 422 Unprocessable Content"
+2025-08-24 10:48:12 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:48:32 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py completed successfully.
+2025-08-24 10:48:32 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\01_data_fetching\data_fetch.py completed successfully.
+2025-08-24 10:48:32 - INFO - Finished in state Completed()
+2025-08-24 10:48:32 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:48:32 - INFO - Starting Data Ingestion (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py)
+2025-08-24 10:48:42 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py completed successfully.
+2025-08-24 10:48:42 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\02_data_ingestion\data_ingest.py completed successfully.
+2025-08-24 10:48:42 - INFO - Finished in state Completed()
+2025-08-24 10:48:42 - INFO - Starting Raw Data Storage (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py)
+2025-08-24 10:48:43 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:48:48 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py completed successfully.
+2025-08-24 10:48:48 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\03_raw_data_storage\data_storage.py completed successfully.
+2025-08-24 10:48:48 - INFO - Finished in state Completed()
+2025-08-24 10:48:48 - INFO - Starting Data Validation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py)
+2025-08-24 10:48:49 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:48:49 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py completed successfully.
+2025-08-24 10:48:49 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\04_data_validation\data_validation.py completed successfully.
+2025-08-24 10:48:49 - INFO - Finished in state Completed()
+2025-08-24 10:48:49 - INFO - Starting Data Preparation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py)
+2025-08-24 10:48:50 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py completed successfully.
+2025-08-24 10:48:50 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\05_data_preparation\data_preparation.py completed successfully.
+2025-08-24 10:48:50 - INFO - Finished in state Completed()
+2025-08-24 10:48:50 - INFO - Starting Data Transformation (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py)
+2025-08-24 10:48:51 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:48:57 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py completed successfully.
+2025-08-24 10:48:57 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\06_data_transformation_and_storage\data_transform.py completed successfully.
+2025-08-24 10:48:57 - INFO - Finished in state Completed()
+2025-08-24 10:48:57 - INFO - Starting Feature Store (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py)
+2025-08-24 10:48:58 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py completed successfully.
+2025-08-24 10:48:58 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\07_feature_store\feature_store.py completed successfully.
+2025-08-24 10:48:58 - INFO - Finished in state Completed()
+2025-08-24 10:48:58 - INFO - Starting Model Building (C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py)
+2025-08-24 10:48:59 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:49:09 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py completed successfully.
+2025-08-24 10:49:09 - INFO - C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2\08_model_building\model_building.py completed successfully.
+2025-08-24 10:49:09 - INFO - Finished in state Completed()
+2025-08-24 10:49:09 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/flow_runs/a5e1dbe9-405d-438f-a4b8-4c413441fa8c/set_state "HTTP/1.1 201 Created"
+2025-08-24 10:49:09 - INFO - Finished in state Completed()
+2025-08-24 10:49:09 - INFO - HTTP Request: POST http://127.0.0.1:8223/api/logs/ "HTTP/1.1 201 Created"
+2025-08-24 10:49:09 - INFO - Stopping temporary server on http://127.0.0.1:8223

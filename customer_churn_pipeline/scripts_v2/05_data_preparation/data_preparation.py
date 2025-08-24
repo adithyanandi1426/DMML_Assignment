@@ -36,13 +36,8 @@ try:
     df = pd.read_csv(latest_data_path)
     logging.info(f"Loaded dataset with {df.shape[0]} rows and {df.shape[1]} columns")
     logging.info("Cleaning data...")
-    # Basic cleaning steps  
-    # df.columns = [col.strip().lower().replace(" ", "_") for col in df.columns]
-    # logging.info(f"Columns standardized: {df.columns.tolist()}")
     df.drop_duplicates(inplace=True)
     logging.info(f"Duplicates removed if any. New shape: {df.shape}")
-    # df.dropna(axis=0, how='all', inplace=True)
-    # logging.info(f"Rows with all nulls removed. New shape: {df.shape}")
     logging.info(f"Data cleaned. New shape: {df.shape}")
     processed_path = os.getenv("PROCESSED_DATA_PATH_BASE")
     output_partition = os.path.join(processed_path, latest_partition)

@@ -1,0 +1,53 @@
+Column,Data Type,Missing (%),Unique Values,Is Constant,Is Unique,Most Frequent Value,Check Status
+Age,int64,0.0,62,False,False,42,OK
+Avg Monthly GB Download,int64,0.0,50,False,False,0,OK
+Avg Monthly Long Distance Charges,float64,0.0,2666,False,False,0.0,OK
+Churn,int64,0.0,2,False,False,0,OK
+Churn Category,object,73.47,5,False,False,Competitor,High Missing
+Churn Reason,object,73.47,20,False,False,Competitor had better devices,High Missing
+Churn Score,int64,0.0,81,False,False,91,OK
+City,object,0.0,1085,False,False,Los Angeles,OK
+CLTV,int64,0.0,2671,False,False,5527,OK
+Contract,object,0.0,3,False,False,Month-to-Month,OK
+Country,object,0.0,1,True,False,United States,Constant Value
+Customer ID,object,0.0,4225,False,True,0002-ORFBO,Unexpected Unique
+Customer Status,object,0.0,3,False,False,Stayed,OK
+Dependents,int64,0.0,2,False,False,0,OK
+Device Protection Plan,int64,0.0,2,False,False,0,OK
+Gender,object,0.0,2,False,False,Male,OK
+Internet Service,int64,0.0,2,False,False,1,OK
+Internet Type,object,20.97,3,False,False,Fiber Optic,OK
+Lat Long,object,0.0,1627,False,False,"33.141265, -116.967221",OK
+Latitude,float64,0.0,1594,False,False,32.85723,OK
+Longitude,float64,0.0,1593,False,False,-117.209774,OK
+Married,int64,0.0,2,False,False,0,OK
+Monthly Charge,float64,0.0,1387,False,False,20.05,OK
+Multiple Lines,int64,0.0,2,False,False,0,OK
+Number of Dependents,int64,0.0,8,False,False,0,OK
+Number of Referrals,int64,0.0,12,False,False,0,OK
+Offer,object,55.01,5,False,False,Offer B,High Missing
+Online Backup,int64,0.0,2,False,False,0,OK
+Online Security,int64,0.0,2,False,False,0,OK
+Paperless Billing,int64,0.0,2,False,False,1,OK
+Partner,int64,0.0,2,False,False,0,OK
+Payment Method,object,0.0,3,False,False,Bank Withdrawal,OK
+Phone Service,int64,0.0,2,False,False,1,OK
+Population,int64,0.0,1539,False,False,34902,OK
+Premium Tech Support,int64,0.0,2,False,False,0,OK
+Quarter,object,0.0,1,True,False,Q3,Constant Value
+Referred a Friend,int64,0.0,2,False,False,0,OK
+Satisfaction Score,int64,0.0,5,False,False,3,OK
+Senior Citizen,int64,0.0,2,False,False,0,OK
+State,object,0.0,1,True,False,California,Constant Value
+Streaming Movies,int64,0.0,2,False,False,0,OK
+Streaming Music,int64,0.0,2,False,False,0,OK
+Streaming TV,int64,0.0,2,False,False,0,OK
+Tenure in Months,int64,0.0,72,False,False,1,OK
+Total Charges,float64,0.0,4038,False,False,19.75,OK
+Total Extra Data Charges,int64,0.0,16,False,False,0,OK
+Total Long Distance Charges,float64,0.0,3705,False,False,0.0,OK
+Total Refunds,float64,0.0,312,False,False,0.0,OK
+Total Revenue,float64,0.0,4198,False,False,116.27,OK
+Under 30,int64,0.0,2,False,False,0,OK
+Unlimited Data,int64,0.0,2,False,False,1,OK
+Zip Code,int64,0.0,1594,False,False,92027,OK

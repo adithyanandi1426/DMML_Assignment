@@ -3,28 +3,39 @@ import subprocess
 import logging
 from datetime import datetime
 from prefect import flow, get_run_logger, task
+from dotenv import load_dotenv
 
+load_dotenv()
+ 
 # === Logging Setup ===
-log_dir = r"C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\data\logs"
+log_dir = os.getenv("LOG_DIR")
 os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, "10_orchestration.log")
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
+log_file = os.path.join(log_dir, "09_orchestration.log")
+ 
+# Create handlers
+file_handler = logging.FileHandler(log_file, mode="a", encoding="utf-8")
+console_handler = logging.StreamHandler()
+ 
+formatter = logging.Formatter(
+    '%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
-
-logging.info("Started Prefect orchestration for customer churn pipeline")
-
-PYTHON_EXECUTABLE = r"C:\Users\adity\Mtech\DMML\DMML_Assignment\dmml_env\Scripts\python.exe"
-
-# === Prefect Task ===
-@task
-def run_script(script_path: str):
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+ 
+# Attach to root logger (works even with Prefect)
+root_logger = logging.getLogger()
+root_logger.setLevel(logging.INFO)
+root_logger.addHandler(file_handler)
+root_logger.addHandler(console_handler)
+logging.info("Orchestration script started.")
+ 
+PYTHON_EXECUTABLE = os.getenv("PYTHON_EXECUTABLE")
+ 
+@task(retries=2, retry_delay_seconds=30, name="{script_name}")
+def run_script(script_path: str, script_name: str) -> str:
     logger = get_run_logger()
-    logging.info(f"Starting {script_path}")
-
+    logging.info(f"Starting {script_name} ({script_path})")
     try:
         result = subprocess.run([PYTHON_EXECUTABLE, script_path], capture_output=True, text=True,encoding="utf-8",
         errors="replace")
@@ -39,27 +50,29 @@ def run_script(script_path: str):
         logger.exception(f"Error running {script_path}: {e}")
         logging.exception(f"Error running {script_path}: {e}")
         raise
-
-# === Main Flow ===
+ 
+   
+    return script_name
+ 
+ 
 @flow(name="Churn_Pipeline_Orchestration")
 def churn_pipeline_flow():
-    base_path = r"C:\Users\adity\Mtech\DMML\DMML_Assignment\customer_churn_pipeline\scripts_v2"
-
-    script_paths = [
-        os.path.join(base_path, "01_data_fetching", "data_fetch.py"),
-        os.path.join(base_path, "02_data_ingestion", "data_ingest.py"),
-        os.path.join(base_path, "03_raw_data_storage", "data_storage.py"),
-        os.path.join(base_path, "04_data_validation", "data_validation.py"),
-        os.path.join(base_path, "05_data_preparation", "data_preparation.py"),
-        os.path.join(base_path, "06_data_transformation_and_storage", "data_transform.py"),
-        # os.path.join(base_path, "07_feature_store", "07_feature_store.py"),
-        # os.path.join(base_path, "08_data_versioning", "08_data_versioning.py"),
-        os.path.join(base_path, "08_model_building", "model_building.py") # This seems to be named differently
+    base_path = os.getenv("BASE_PATH")  
+ 
+    scripts = [
+        ("Data Fetching", os.path.join(base_path, "01_data_fetching", "data_fetch.py")),
+        ("Data Ingestion", os.path.join(base_path, "02_data_ingestion", "data_ingest.py")),
+        ("Raw Data Storage", os.path.join(base_path, "03_raw_data_storage", "data_storage.py")),
+        ("Data Validation", os.path.join(base_path, "04_data_validation", "data_validation.py")),
+        ("Data Preparation", os.path.join(base_path, "05_data_preparation", "data_preparation.py")),
+        ("Data Transformation", os.path.join(base_path, "06_data_transformation_and_storage", "data_transform.py")),
+        ("Feature Store", os.path.join(base_path, "07_feature_store", "feature_store.py")),
+        ("Model Building", os.path.join(base_path, "08_model_building", "model_building.py")),
     ]
-
-    for script in script_paths:
-        run_script(script)
-
+ 
+    for script_name, script_path in scripts:
+        run_script.with_options(name=script_name)(script_path, script_name=script_name)
+ 
+ 
 if __name__ == "__main__":
     churn_pipeline_flow()
-    logging.shutdown()
